@@ -17,6 +17,16 @@ namespace RazorPagesMovie.Models
                 {
                     return;
                 }
+
+                context.Movie.AddRange(
+                    new Movie
+                    {
+                        Title = "When Harry met Sally",
+                        ReleaseDate = DateTime.Parse("1989-2-12"),
+                        Genre = "Romantic Comedy",
+                        Price = 7.99M
+                    }
+                    );
             }
         }
     }
