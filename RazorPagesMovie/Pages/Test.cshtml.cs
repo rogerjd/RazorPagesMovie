@@ -38,9 +38,10 @@ namespace RazorPagesMovie.Pages
             Message = "Delete handler fired";
         }
 
+        //ref: there must be a ctrl in the form with name="id" for the param to bind
         public void OnPostView(int id)
         {
-            Message = $"View handler fired {id}";
+            Message = $"View handler fired with value = {id}";
         }
 
     }
