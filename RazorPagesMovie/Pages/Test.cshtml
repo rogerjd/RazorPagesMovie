@@ -21,6 +21,7 @@
         <div class="col-lg-1">
             <form asp-page-handler="view" method="post">
                 <button class="btn btn-default">View</button>
+                <input type="hidden" name="id" value="3"/>
             </form>
         </div>
     </div>
@@ -28,4 +29,4 @@
 }
 
 Hi from Test page
-@* "{handler?}"  action=Test/delete  not in query string, but in route. qs or route*@
+@* "{handler?}" using the commented out directive produces => action=Test/delete  not in query string, but in route. qs or route*@
