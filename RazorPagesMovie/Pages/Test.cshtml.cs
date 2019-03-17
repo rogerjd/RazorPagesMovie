@@ -37,5 +37,11 @@ namespace RazorPagesMovie.Pages
         {
             Message = "Delete handler fired";
         }
+
+        public void OnPostView()
+        {
+            Message = "View handler fired";
+        }
+
     }
 }
