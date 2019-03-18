@@ -1,0 +1,16 @@
+﻿@page
+@model RazorPagesMovie.Pages.MailModel
+@{
+    ViewData["Title"] = "EMail";
+
+<form method="post">
+    <label asp-for="message.From"></label><input type="text" asp-for="message.From" /><br />
+    <label asp-for="message.To"></label><input type="text" asp-for="message.To" /><br />
+    <label asp-for="message.Subject"></label><input type="text" asp-for="message.Subject" /><br />
+    <label asp-for="message.Body"></label><input type="text" asp-for="message.Body" /><br />
+    <input type="submit" />
+</form>
+}
+
+<h2>EMail contact</h2>
+

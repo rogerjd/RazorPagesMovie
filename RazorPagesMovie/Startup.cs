@@ -11,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using RazorPagesMovie.Models;
+using RazorPagesMovie.Services;
 
 namespace RazorPagesMovie
 {
@@ -40,6 +41,7 @@ namespace RazorPagesMovie
                     options.UseSqlServer(Configuration.GetConnectionString("RazorPagesMovieContext")));
 
             services.AddTransient<IClock, LocalClock>();
+            services.AddTransient<IMailService, SmtpMailService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

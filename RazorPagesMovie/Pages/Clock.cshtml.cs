@@ -8,12 +8,12 @@ using RazorPagesMovie.Models;
 
 namespace RazorPagesMovie.Pages
 {
-    public class AboutModel : PageModel
+    public class ClockModel : PageModel
     {
         private IClock _clock;
         public string Message;
 
-        public AboutModel(IClock clock)
+        public ClockModel(IClock clock)
         {
             _clock = clock;
         }
