@@ -21,6 +21,7 @@ namespace RazorPagesMovie.Services
                 smtp.Port = 995;
                 smtp.UseDefaultCredentials = false;
                 smtp.Credentials = new System.Net.NetworkCredential("rjpd@netzero.com", "pcspcs");
+                smtp.EnableSsl = true;
 
                 var msg = new MailMessage
                 {
