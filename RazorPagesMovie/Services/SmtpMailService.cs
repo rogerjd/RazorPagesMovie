@@ -17,10 +17,10 @@ namespace RazorPagesMovie.Services
                 //ok: smtp.PickupDirectoryLocation = @"c:\maildrop";
 
                 smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
-                smtp.Host = "smtp.netzero.com";
-                smtp.Port = 995;
+                smtp.Host = "smtp.gmail.com";
+                smtp.Port = 25;
                 smtp.UseDefaultCredentials = false;
-                smtp.Credentials = new System.Net.NetworkCredential("rjpd@netzero.com", "pcspcs");
+                smtp.Credentials = new System.Net.NetworkCredential("rdemagri", "dummy123");
                 smtp.EnableSsl = true;
 
                 var msg = new MailMessage
