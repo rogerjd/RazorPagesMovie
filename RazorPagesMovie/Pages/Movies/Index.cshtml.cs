@@ -33,7 +33,7 @@ namespace RazorPagesMovie.Pages.Movies
         {
             IQueryable<string> genreQuery = from m in _context.Movie
                                             orderby m.Genre
-                                            select m.Genre;
+                                            select m.Genre; test
 
             var movies = from m in _context.Movie
                          select m;
